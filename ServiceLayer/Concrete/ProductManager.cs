@@ -64,9 +64,9 @@ namespace ServiceLayer.Concrete
             return new SuccessResult(Messages.UpdatedProduct);
         }
 
-        //public IResult GetAllProductDto()
-        //{
-        //    return new SuccessDataResult<List<ProductDto>>(_productDal.GetAllProductDto());
-        //}
+        public IResult GetAllProductDto()
+        {
+            return new SuccessDataResult<List<ProductDto>>(_productDal.GetAllProductDto());
+        }
     }
 }

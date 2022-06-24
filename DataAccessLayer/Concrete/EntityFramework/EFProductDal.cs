@@ -13,14 +13,14 @@ namespace DataAccessLayer.EntityFramework
             _context = context;
         }
 
-        //public List<ProductDto> GetAllProductDto()
-        //{
+        public List<ProductDto> GetAllProductDto()
+        {
 
-        //    var fullProductList = "sp_full_products";
-        //    var result = _context.ProductDtos.FromSqlRaw($"exec {fullProductList}").ToList();
+            var fullProductList = "sp_full_products";
+            var result = _context.ProductDtos.FromSqlRaw($"exec {fullProductList}").ToList();
 
-        //    return result.ToList();
+            return result.ToList();
 
-        //}
+        }
     }
 }

@@ -10,6 +10,6 @@ namespace ServiceLayer.Abstract
         public IResult Update(Product product);
         public IResult Delete(Product product);
         public IResult AddProducts(Product product1, Product product2);
-        //public IResult GetAllProductDto();
+        public IResult GetAllProductDto();
     }
 }

@@ -55,11 +55,11 @@ namespace Web_API.Controllers
             }
             return BadRequest(result);
         }
-        //[HttpGet("getAllProductDetails")]
-        //public IActionResult GetAllProductDto()
-        //{
-        //    var result = _productService.GetAllProductDto();
-        //    return Ok(result);
-        //}
+        [HttpGet("getAllProductDetails")]
+        public IActionResult GetAllProductDto()
+        {
+            var result = _productService.GetAllProductDto();
+            return Ok(result);
+        }
     }
 }

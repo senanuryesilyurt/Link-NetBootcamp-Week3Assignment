@@ -10,6 +10,6 @@ namespace DataAccessLayer.Abstarct
 {
     public interface IProductDal:IEntityRepository<Product>
     {
-        //public List<ProductDto> GetAllProductDto();
+        public List<ProductDto> GetAllProductDto();
     }
 }
